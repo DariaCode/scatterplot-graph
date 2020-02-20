@@ -1,0 +1,81 @@
+/* ----------------------------------------------------
+Stylesheet for www.dariacode.dev / scatterplot graph
+Updated: 02/20/2020
+Author: Daria Vodzinskaia
+Website: www.dariacode.dev
+-------------------------------------------------------  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cute Font', cursive;
+    background-color: #6D75CA;
+}
+
+.scatterPlot {
+    height: 500px;
+    width: 900px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    box-shadow: 2px 2px 25px;
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.plot {
+    position: absolute;
+    padding-left: 4em;
+    top: 4em;
+}
+
+#tooltip {
+    position: absolute;
+    text-align: left;
+    background: rgba(109, 117, 202, 0.3);
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 0px 10px;
+    pointer-events: none;
+    opacity: .8;
+    border: 1px solid gray;
+    margin-left: 40px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+footer i {
+    padding: 0 15px 10px;
+    font-size: 1.2em;
+    color: #000;
+}
+
+footer i:hover {
+    color: white;
+}
